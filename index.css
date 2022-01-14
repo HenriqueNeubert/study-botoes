@@ -104,6 +104,82 @@ body{
       transition:all .5s;
 }
 
+.item4::before{
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      transition:transform 250ms ease-in;
+      transform: scaleX(0);
+      transform-origin: right; /*origem da escala a direita*/
+}
+
+.item4:hover::before{
+      transform: scaleX(1);
+      transform-origin: left; 
+}
+
+.item5::before{
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      transition:transform 250ms ease-in;
+      transform: scaleX(0);
+      transform-origin: left; 
+}
+
+.item5:hover::before{
+      transform: scaleX(1);
+      transform-origin: right; 
+}
+
+.item6::before{
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      transition:transform 250ms ease-in;
+      transform: scaleY(0);
+      transform-origin: bottom; 
+}
+
+.item6:hover::before{
+      transform: scaleX(1);
+      transform-origin: top; 
+}
+
+.button-inter{
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+      position: relative;
+      margin: 0;
+      padding: 12px 0;
+      font-size: 21px;
+      line-height: 28px;
+      font-weight: bold;
+      color: #fff;
+      border: 1px solid blueviolet;
+      text-decoration: none;
+      transition: all .5s;
+}
+
+.item7:hover{
+      background: #730bec url(./images/pixel_qwmcwc.png);
+      background-size: 100%;
+      transition-delay: .8s;
+      animation: animate1 .8s steps(5) forwards;
+}
+
+@keyframes animate1{
+      0%{
+            background-position-y: 0;
+      }
+      100%{
+            background-position-y: -400px;
+      }
+}
 
 
 
