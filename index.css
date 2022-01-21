@@ -181,6 +181,53 @@ body{
       }
 }
 
+.item8 span{
+      position:relative;
+      z-index: 3;
+}
+
+.item8::before{
+      content: "";
+    
+      width: calc(100% + 2px);
+      height: calc(100% - 12px);
+    
+      position: absolute;
+      top: 6px;
+      left: -1px;
+    
+      background: #323232;
+    
+      transition: .5s ease-in-out;
+      transform: scaleY(1);
+    }
+
+.item8:hover::before{
+      transform: scaleY(0);
+}
+
+.item8::after{
+      content: "";
+    
+      width: calc(100% - 12px);
+      height: calc(100% + 4px);
+    
+      position: absolute;
+      top: -2px;
+      left: 6px;
+    
+      background: #323232;
+    
+      transition: .5s ease-in-out;
+      transform: scaleX(1);
+    }
+/* 
+.item8:hover::after{
+      transform: scaleX(0);
+} */
+
+
+
 
 
 
