@@ -221,10 +221,10 @@ body{
       transition: .5s ease-in-out;
       transform: scaleX(1);
     }
-/* 
+
 .item8:hover::after{
       transform: scaleX(0);
-} */
+}
 
 
 
